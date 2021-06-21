@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orinoco</title>
+        <link rel="stylesheet" href="styles/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+    
+
+  <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="" width="200">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Panier</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- RIBBON-->
+    
+    <div id="commandez" class="container w-50 pl-5 pr-5 rounded-lg">
+     <!-- slide -->
+     <div class="row align-items-center">
+       <div class="col-sm p-3 text-light text-center">
+         
+         <h4 class="h2 text-shadow titrecamera">passez votre commande</h4>
+       </div>
+     </div><!-- SLIDE-->
+    </div>
+ 
+
+<div class="">
+    <!-- ORDER SUMMARY -->
+    <section class="mt-4 rounded-md p-4 bg-oniPink">
+      <h2 class="text-lg font-bold mb-2">Votre carte</h2>
+
+      <table class="border-collapse w-full">
+        <thead>
+          <tr class="border bg-white">
+            <th class="py-2">Produit</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+
+        <tbody id="productsList">
+          <template id="productTemplate">
+            <tr class="border bg-white rounded">
+              <td id="productName" class="text-center p-0 py-2">Arnold</td>
+              <td class="text-center p-0">
+                <form class="flex">
+                  <select
+                    id="productQuantity"
+                    class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
+                    name="quantity"
+                    id="quantity"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </form>
+              </td>
+              <td id="productPrice" class="text-center p-0">x€</td>
+              <td id="productTotalPrice" class="text-center p-0">x€</td>
+            </tr>
+          </template>
+          <tr class="bg-gray-100">
+            <td colspan="3" class="text-center py-2">Total</td>
+            <td class="text-center" id="totalPrice">x€</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- ORDER SUMMARY -->
+
+    <!-- PURCHASE FORM -->
+    <section class="mt-4 rounded-md p-4 bg-oniPink">
+      <h2 class="text-lg font-bold mb-2">Adresse Livraison</h2>
+      <div class="grid grid-cols-4 gap-4">
+        <div class="flex flex-col">
+          <label for="firstname" class="label">Prénom</label>
+          <input type="text" name="firstname" id="firstname" class="input" required />
+        </div>
+        <div class="flex flex-col">
+          <label for="lastname" class="label">Nom</label>
+          <input type="text" name="lastname" id="lastname" class="input" required />
+        </div>
+        <div class="flex flex-col col-span-2">
+          <label for="email" class="label">Adresse e-mail</label>
+          <input type="text" name="email" id="email" class="input" required />
+        </div>
+        <div class="flex flex-col col-span-2">
+          <label for="adress" class="label">Adresse</label>
+          <input type="text" name="adress" id="adress" class="input" required />
+        </div>
+        <div class="flex flex-col">
+          <label for="zipcode" class="label">Code postal</label>
+          <input type="text" name="zipcode" id="zipcode" class="input" required />
+        </div>
+        <div class="flex flex-col">
+          <label for="city" class="label">Ville</label>
+          <input type="text" name="city" id="city" class="input" required />
+        </div>
+      </div>
+      <div class="flex justify-end">
+        <a id="confirmPurchase"  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-6"
+ href="confirmation.html" >
+          Procéder au paiement
+        </a>
+      </div>
+    </section>
+    <!-- PURCHASE FORM -->
+</div>
+</div>
+
+
+<div id="footer" class="py-5">
+    <div class="col">
+        <h3 class="text-center suiveznous">suivez nous sur</h3>
+      </div>
+    <div class="row justify-content-center">
+        <div class="col-2"><a href="#">Facebook</a></div>
+        <div class="col-2"><a href="#">twitter</a></div>
+        <div class="col-2"><a href="#">pinterest</a></div>
+        <div class="col-1"><a href="#">youtube </a></div>
+        
+      </div>
+   
+  </div>
+
+  <script src="bstyles/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="js/panier.js" ></script>
+</body>
+</html>
