@@ -31,6 +31,7 @@ const imprimirCards = data => {
         cardItems.querySelector('p').textContent = product.description;
         cardItems.querySelector('img').setAttribute('src', product.imageUrl);
         cardItems.querySelector('a').setAttribute('href',  `product.html?id=${product._id}`);
+        cardItems.querySelector('a').setAttribute('OnClick', product.imageUrl);
 
 
         const clone = cardItems.cloneNode(true);
