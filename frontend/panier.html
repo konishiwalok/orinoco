@@ -47,59 +47,103 @@
 
 <div class="">
     <!-- ORDER SUMMARY -->
-    <section class="mt-4 rounded-md p-4 bg-oniPink">
-      <h2 class="text-lg font-bold mb-2">Votre carte</h2>
 
-      <table class="border-collapse w-full">
-        <thead>
-          <tr class="border bg-white">
-            <th class="py-2">Produit</th>
-            <th>Quantité</th>
-            <th>Prix</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-
-        <tbody id="productsList">
-          <template id="productTemplate">
-            <tr class="border bg-white rounded">
-              <td id="productName" class="text-center p-0 py-2">Arnold</td>
-              <td class="text-center p-0">
-                <form class="flex">
-                  <select
-                    id="productQuantity"
-                    class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
-                    name="quantity"
-                    id="quantity"
-                  >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                  </select>
-                </form>
-              </td>
-              <td id="productPrice" class="text-center p-0">x€</td>
-              <td id="productTotalPrice" class="text-center p-0">x€</td>
+    <div class="container">
+        <h4>Carrito de compras</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
             </tr>
-          </template>
-          <tr class="bg-gray-100">
-            <td colspan="3" class="text-center py-2">Total</td>
-            <td class="text-center" id="totalPrice">x€</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row "  class="bg-info" colspan="5">Carrito vacío - comience a comprar!</th>
+            </tr>
+
+          </tfoot>
+        </table>
+        <h4>Cards</h4>
+        <div class="row" id="cards"></div>
+      </div>
+  
+      <template id="template-footer">
+          <th scope="row" colspan="2">Total productos</th>
+          <td>10</td>
+          <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                  vaciar todo
+              </button>
+          </td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+      
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+  
+      <template id="template-card">
+        <div class="col-12 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
     <!-- ORDER SUMMARY -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- PURCHASE FORM -->
     <section class="mt-4 rounded-md p-4 bg-oniPink">
       <h2 class="text-lg font-bold mb-2">Adresse Livraison</h2>
@@ -137,6 +181,9 @@
       </div>
     </section>
     <!-- PURCHASE FORM -->
+
+
+    
 </div>
 </div>
 
@@ -159,3 +206,64 @@
   <script src="js/panier.js" ></script>
 </body>
 </html>
+
+
+
+<!--pilas ya que este es el primer html con los stulos
+ya creados paiementlo que hay que hacer es copiar esos estilos
+-->
+
+
+
+
+<!-- <section class="mt-4 rounded-md p-4 bg-oniPink">
+  <h2 class="text-lg font-bold mb-2">Votre carte</h2>
+
+  <table class="border-collapse w-full">
+    <thead>
+      <tr class="border bg-white">
+        <th class="py-2">Produit</th>
+        <th>Quantité</th>
+        <th>Prix</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+
+    <tbody id="productsList">
+      <template id="productTemplate">
+        <tr class="border bg-white rounded">
+          <td id="productName" class="text-center p-0 py-2">Arnold</td>
+          <td class="text-center p-0">
+            <form class="flex">
+              <select
+                id="productQuantity"
+                class="border border-indigo-200 rounded text-center w-full block pl-3 pr-10 py-1 text-base focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm z-10"
+                name="quantity"
+                id="quantity"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </form>
+          </td>
+          <td id="productPrice" class="text-center p-0">x€</td>
+          <td id="productTotalPrice" class="text-center p-0">x€</td>
+        </tr>
+      </template>
+      <tr class="bg-gray-100">
+        <td colspan="3" class="text-center py-2">Total</td>
+        <td class="text-center" id="totalPrice">x€</td>
+      </tr>
+    </tbody>
+  </table>
+</section> -->

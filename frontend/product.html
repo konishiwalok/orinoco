@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Orinoco</title>
-        <link rel="stylesheet" href="styles/bootstrap.min.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orinoco</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     
     
-
+  
   <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
-        <div class="container-fluid">
+  <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
+    <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="" width="200">
-            </a>
+              </a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+                  <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
                 </ul>
+              </div>
             </div>
-        </div>
-    </nav>
-
+          </nav>
+          
+          
  <!-- GAMES-->
- <div id="products" class="row"></div>
+ <div  class="row" id="products"></div>
+  
    <template id="produit-card">
       <div class="col-12 mb-2">
         <div class="card">
             <img src="" alt="" class="card-img-top">
-          <div class="card-body">
+          <input class="card-body">
             <h3>Titre</h3>
             <p class="description">lorem</p>
+            <!-- <input id="element" type="radio" name="lense" onclick="getCurrentItemQuantity">lentilles</input> -->
             <p class="price-camera">prix</p>
             <button class="btn btn-dark">Comprar</button>
           </div>
@@ -51,9 +54,9 @@
         
       </div>  
     </div>
-    
+    <!-- este es el carrito de compras -->
 
-
+<!-- este es el footer -->
     <div id="footer" class="py-5">
         <div class="col">
             <h3 class="text-center suiveznous">suivez nous sur</h3>
