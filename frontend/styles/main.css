@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
   }
   
   
-  #degrade{
+  .degrade{
     background:linear-gradient(0deg, #f3e9f1 0%, #b3a9b1 57%);
     margin-top: -20px;
   }
