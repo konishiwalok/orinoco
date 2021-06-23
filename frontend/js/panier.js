@@ -1,9 +1,3 @@
-const url = 'http://localhost:3000/api/cameras';
-
-const items = document.getElementById('items'); // llama donde va a ir la info 
-const cardItems = document.getElementById('items-camera').content; // llamado del template por id
-const fragment = document.createDocumentFragment(); // agrega el fragmento de codigo que se quiere mostrar
-
 
 const cards = document.getElementById('cards')
 const templateFooter = document.getElementById('template-footer').content
@@ -36,6 +30,7 @@ const addCarrito = e => {
     }
     e.stopPropagation()
 }
+
 const setCarrito = objeto =>{
     // console.log(objeto)
     const producto = { 
@@ -49,6 +44,9 @@ const setCarrito = objeto =>{
     }
     carrito[producto.id] = { ...producto }
     pintarCarrito() 
+    // pintarCarrito = () => {
+    //     console.log(carrito)
+    // }
 }
 const  pintarCarrito = () => {
     // console.log(carrito)

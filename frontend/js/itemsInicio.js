@@ -31,12 +31,9 @@ const imprimirCards = data => {
         cardItems.querySelector('p').textContent = product.description;
         cardItems.querySelector('img').setAttribute('src', product.imageUrl);
         cardItems.querySelector('a').setAttribute('href',  `product.html?id=${product._id}`);
-        cardItems.querySelector('a').setAttribute('OnClick', product.imageUrl);
-
-
+        cardItems.querySelector('a').dataset.id = product._id;
         const clone = cardItems.cloneNode(true);
         fragment.appendChild(clone);
-
     })
     items.appendChild(fragment);
 }
