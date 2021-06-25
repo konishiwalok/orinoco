@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const showCart = () => {
     Object.values(cart).forEach(product => {
+       
         templateCart.querySelector('th').textContent= product.id;
-    })
+        templateCart.querySelector('td')[0].textContent= product.name;
+        templateCart.querySelector('.item-cantidad').textContent= product.cantidad;
+        templateCart.querySelector('span').textContent= product.price;
+   
+    const clone = templateCart.cloneNode(true);
+    fragment.appendChild(clone);
+})
+   itemsCart.appendChild(fragment);
 }
