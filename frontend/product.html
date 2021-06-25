@@ -1,110 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
+    <meta name="description">
+    <meta content="Orinoco est une enterprise qui s'en charge de trouver et vendre des anciens appareils photos ">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orinoco</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    
-    
-  
-  <!-- NAVBAR-->
-  <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
-    <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="" width="200">
-              </a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
-                  <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
-                </ul>
-              </div>
+
+    <div class="row" id="product"></div>
+
+    <template id="product-item" class="container">
+
+        <div class="col-12 mb-2">
+            <div class="card col-md-6 mb-md-0 p-md-4">
+                <img src="" alt="" class="card-img-top d-block w-100" style="max-height:800px;">
+                <input class="card-body">
+                <h3>Titre</h3>
+                <p class="description">lorem</p>
+                <div id="lenses-all-buttons"></div>
+
+                <p class="price-camera">prix</p>
+                <a class="btn btn-dark add-cart" >Add card</a>
             </div>
-          </nav>
-          
-          
- <!-- GAMES-->
- <div  class="row " id="products"></div>
- 
-   <template id="produit-card" >
-      <div class="col-12 mb-2 container-md p-5 degrade row no-gutters bg-light position-relative"">
-        
-        <div class="card col-md-6 mb-md-0 p-md-4 container">
-            <img src="" alt="" class="card-img-top d-block w-100" style="max-height:800px;">
-          </div>
-          
-          <div  class="col-md-6 position-static p-4 pl-md-0">
-           
-            <h3 class="mt-0">Titre</h3>
-            <p class="description">lorem</p>
-            <div id="lenses-all-buttons"></div>
-            <p class="price-camera">prix</p>
-            <button class="btn btn-dark add-cart " >Add card</button>
-          </div>
-
         </div>
-      </div>
     </template>
-     
-  </div>
-</div>
-    <!-- este es el carrito de compras -->
 
-<!-- este es el footer -->
-    <div id="footer" class="py-5">
-        <div class="col">
-            <h3 class="text-center suiveznous">suivez nous sur</h3>
-          </div>
-        <div class="row justify-content-center">
-            <div class="col-2"><a href="#">Facebook</a></div>
-            <div class="col-2"><a href="#">twitter</a></div>
-            <div class="col-2"><a href="#">pinterest</a></div>
-            <div class="col-1"><a href="#">youtube </a></div>
-        </div>
-       
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-      <div id="items"></div>
+    <script src="js/header.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/addCart.js"></script>
 
 
-      <script src="js/produit.js" ></script>
-      <script src="styles/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
-</html>   
 
-<!-- 
-<template id="product-details" ></template>
-<div id="degrade">
-  <div class="container-md p-5">
-    <div id="description" class="row"></div>
-    
-    <div class="row no-gutters bg-light position-relative">
-       
-      <div class="col-md-6 mb-md-0 p-md-4">
-            <img src="img/vcam_4.jpg" class="d-block w-100" style="max-height:800px;" alt="...">
-        </div>
-
-        <div class="col-md-6 position-static p-4 pl-md-0">
-          <h5 class="mt-0">Columns with stretched link</h5>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          <span>
-              price:0euros
-          </span><br><br>
-          <input type="number" name="" id=""><br><br>
-
-          <a href="#" class="btn btn-primary">Ajouter au panier</a>
-        </div>
-
-      </div>
-    </template>   -->
+</html>
