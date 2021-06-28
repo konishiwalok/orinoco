@@ -8,7 +8,7 @@ const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
-let id = urlParams.get('id');
+var id = urlParams.get('id');
 
 
 document.addEventListener('DOMContentLoaded', () => {

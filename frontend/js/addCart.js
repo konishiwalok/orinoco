@@ -1,4 +1,4 @@
-let cart = {}
+let cart = JSON.parse(localStorage.getItem('cart') || '{}')
 
 product.addEventListener('click', e => {
     addCart(e)
@@ -6,7 +6,7 @@ product.addEventListener('click', e => {
 
 const addCart = e => {
     //console.log(e.target);
-    console.log(e.target.classList.contains('add-cart'));
+    //console.log(e.target.classList.contains('add-cart'));
 
     if (e.target.classList.contains('add-cart')) {
         if (lenseCheck(e.target.parentElement.querySelector('#lenses-all-buttons'))) {
@@ -30,11 +30,11 @@ const setCart = obj => {
         cantidad: 1
     }
 
-    if (cart.hasOwnProperty(product.id)) {
-        product.cantidad = cart[product.id].cantidad + 1;
+    if (cart.hasOwnProperty(product.id + product.lense)) {
+        product.cantidad = cart[product.id + product.lense].cantidad + 1;
     }
-
-    cart[product.id] = { ...product };
+    
+    cart[product.id + product.lense] = { ...product };
     console.log(cart);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
