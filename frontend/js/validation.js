@@ -69,35 +69,37 @@ function sendOrder() {
     
   }
 
-  // const product = Object.values(cart.product).map((product) => {
-  //   return product._id
-  // })
+  const product = Object.values(cart.product).map((product) => {
+    return product._id
+  })
 
-  // const order = {
-  //   contact: {
-  //     firstName: firstname,
-  //     lastName: lastname,
-  //     address: adress + ' ' + zipcode,
-  //     city: city,
-  //     email: email,
-  //   },
-  //   product: product,
-  // }
+  const order = {
+    contact: {
+      firstName: firstname,
+      lastName: lastname,
+      address: adress + ' ' + zipcode,
+      city: city,
+      email: email,
+    },
+    product: product,
+  }
 
-  // const requestOptions = {
-  //   method: 'POST',
-  //   body: JSON.stringify(order),
-  //   headers: { 'Content-Type': 'application/json; charset=utf-8' },
-  // }
+  const requestOptions = {
+    method: 'POST',
+    body: JSON.stringify(order),
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+  }
 
-  // fetch(`${apiUrl}/api/camera/order`, requestOptions)
-  //   .then((response) => response.json())
-  //   .then((json) => {
-  //     console.log(json)
-  //     localStorage.removeItem('cart')
-  //     window.location.href = `${window.location.origin}/confirmation.html?orderId=${json.orderId}`
-  //   })
-  //   .catch(() => {
-  //     alert(error)
-  //   })
+  const apiUrl = 'http://localhost:3000';
+
+  fetch(`${apiUrl}/api/camera/order`, requestOptions)
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json)
+      localStorage.removeItem('cart')
+      window.location.href = `${window.location.origin}/confirmation.html?orderId=${json.orderId}`
+    })
+    .catch(() => {
+      alert(error)
+    })
 }
