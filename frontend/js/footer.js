@@ -1,5 +1,3 @@
-
-
 const footer = `
 <div id="footer" class="py-5">
     <div class="col">
@@ -18,5 +16,4 @@ const footer = `
     <div class="row"></div>
 </div>
 `
-
 document.body.insertAdjacentHTML('beforeend', footer);

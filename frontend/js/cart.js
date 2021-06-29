@@ -66,6 +66,7 @@ const showFooter = () => {
     })
 }
 
+
 const btnAction = e => {
    
     if(e.target.classList.contains('sum')){

@@ -1,5 +1,4 @@
-
-  // Input validity
+// Input validité
   watchValidity(document.getElementById('firstname'), (e) => e.target.value.length > 1)
   watchValidity(document.getElementById('lastname'), (e) => e.target.value.length > 1)
   watchValidity(document.getElementById('email'), (e) => {

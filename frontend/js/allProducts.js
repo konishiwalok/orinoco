@@ -1,7 +1,7 @@
 
 const url = 'http://localhost:3000/api/cameras';
 
-const items = document.getElementById('items'); // llama donde va a ir la info 
+const items = document.getElementById('items'); // llama donde va a ir la infoo
 const cardItems = document.getElementById('items-camera').content; // llamado del template por id
 const fragment = document.createDocumentFragment(); // agrega el fragmento de codigo que se quiere mostrar
 
@@ -20,7 +20,6 @@ const fetchData = async () => {
         console.log(error);
     }
 }
-
 const showAllCards = data => {
     data.forEach( product => {
 

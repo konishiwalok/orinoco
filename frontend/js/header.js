@@ -1,6 +1,3 @@
-
-
-
 const header = `
 <!-- NAVBAR-->
 <header>
@@ -25,5 +22,4 @@ const header = `
     </nav>
 </header>
 `
-
 document.body.insertAdjacentHTML('afterbegin', header);

@@ -1,6 +1,6 @@
 const url = 'http://localhost:3000/api/cameras';
 
-const product = document.getElementById('product'); // llama donde va a ir la info 
+const product = document.getElementById('product'); // llama donde va a ir la infoo 
 const productItem = document.getElementById('product-item').content;// llamamos al template
 const fragment = document.createDocumentFragment(); // agrega el fragmento de codigo que se quiere mostrar
 

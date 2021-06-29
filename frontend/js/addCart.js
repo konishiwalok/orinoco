@@ -33,12 +33,10 @@ const setCart = obj => {
     if (cart.hasOwnProperty(product.id + product.lense)) {
         product.cantidad = cart[product.id + product.lense].cantidad + 1;
     }
-    
     cart[product.id + product.lense] = { ...product };
     console.log(cart);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
-
 // Verificamos cual de las lentes selecciono cuando agrego al carro de compra
 const lenseCheck = lenses => {
 
