@@ -38,7 +38,7 @@ const fetchData = async () => {
 }
 
 
-const imprimirCa%rds = product => {
+const imprimirCards = product => {
     
         produitItems.querySelector('h3').textContent = product.name;
         produitItems.querySelector('p').textContent = product.description;

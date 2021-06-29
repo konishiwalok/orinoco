@@ -67,11 +67,12 @@
   {
     height:  auto;
     max-height: 900px;
-    .borrar {
+    
+  }
+  .borrar {
       text-decoration:none;
     }
     
-  }
 .input 
 {
   padding:10px;
