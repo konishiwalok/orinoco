@@ -70,7 +70,12 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     width: 100%;
   }
   
-  
+  .modifimg
+  {
+    height:  auto;
+    max-height: 900px;
+    
+  }
   
   
   
