@@ -24,22 +24,22 @@
     <!-- ORDER SUMMARY -->
 
     <div class="container">
-        <h4  class="py-5 text-center stilo700"  >Carrito de compras</h4>
+        <h4  class="py-5 text-center stilo700"  >Mon panier</h4>
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Item</th>
-                    <th scope="col">Lense</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Acción</th>
-                    <th scope="col">Precio</th>
+                    <th scope="col">Cameras</th>
+                    <th scope="col">Lentille</th>
+                    <th scope="col">Quantité</th>
+                    <th scope="col">Ajouter ou Supprimer</th>
+                    <th scope="col">Prix</th>
                     <th scope="col">Total</th>
                 </tr>
             </thead>
             <tbody id="items-cart"></tbody>
             <tfoot>
                 <tr id="footer-cart">
-                    <th scope="row " class="bg-info " colspan="5">Carrito vacío - comience a comprar!</th>
+                    <th scope="row " class="bg-info " colspan="5">Panier vide , ajoutez des produits!</th>
                 </tr>
 
             </tfoot>
@@ -49,12 +49,12 @@
     </div>
 
     <template id="template-footer">
-        <th scope="row" colspan="2">Total productos</th>
+        <th scope="row" colspan="2">Total produits</th>
         
         <td class="total-products">10</td>
         <td>
-            <button class="btn btn-danger btn-sm h1" id="btn-clear-cart">
-                vaciar todo
+            <button class="btn btn-danger btn-sm h1  "style="font-size:20px;" id="btn-clear-cart">
+                vider le panier
             </button>
         </td>
         <td></td>

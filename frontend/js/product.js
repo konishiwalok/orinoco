@@ -33,12 +33,14 @@ const showProduct = data => {
     productItem.querySelector('img').setAttribute('src', data.imageUrl);
     productItem.querySelector('.price-camera').textContent = data.price;
     productItem.querySelector('.add-cart').dataset.id = data._id;
+    document.getElementById("titleCamera").innerHTML =  data.name;
+    
 
     console.log(data.lenses)
     data.lenses.forEach(element => {
         console.log(element)
         const lenseButton = `
-                <input id="${element}" type="radio" name="lense" >${element}</button>
+                <input id="${element}" type="radio" name="lense" class="">${element}</button>
             `;
         lensesAllButtons = productItem.querySelector("#lenses-all-buttons");
         lensesAllButtons.innerHTML += lenseButton;
@@ -50,3 +52,5 @@ const showProduct = data => {
 
     product.appendChild(fragment);
 }
+
+    
