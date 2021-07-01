@@ -95,36 +95,46 @@
     <!-- PURCHASE FORM -->
     <section class="mt-4 rounded-md p-4 bg-oniPink">
         <h2 class="text-lg font-bold mb-2 ">Passer commande</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex flex-col">
+
+
+        <form  id="user-form"  class="form  grid grid-cols-2 gap-4">
+          <div class="flex flex-col  form-box">
             <label for="firstname" class="label h6 ">Prénom</label>
             <input type="text" name="firstname" id="firstname" class="input h5" required />
-          </div>
-          <div class="flex flex-col">
+            <small class="error-text">introduce un nombre</small>
+        </div>
+          <div class="flex flex-col form-box">
             <label for="lastname" class="label h6">Nom</label>
             <input type="text" name="lastname" id="lastname" class="input h5" required />
-          </div>
-          <div class="flex flex-col col-span-2">
+            <small class="error-text">introduce un apellido</small>
+        </div>
+          <div class="flex flex-col col-span-2 form-box">
             <label for="email" class="label h6">Adresse e-mail</label>
             <input type="text" name="email" id="email" class="input h5"  placeholder="you@example.com" required />
-          </div>
-          <div class="flex flex-col col-span-2">
+            <small class="error-text">introduce un correop</small>
+        </div>
+          <div class="flex flex-col col-span-2 form-box">
             <label for="adress" class="label h6 ">Adresse</label>
             <input type="text" name="adress" id="adress" class="input h5 " required />
+            <small class="error-text">introduce una direccion</small>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col form-box">
             <label for="zipcode" class="label h6">Code postal</label>
             <input type="text" name="zipcode" id="zipcode" class="input h5" placeholder="75001" required />
-          </div>
-          <div class="flex flex-col">
+            <small class="error-text">introduce un codigo postal</small>
+        </div>
+          <div class="flex flex-col form-box">
             <label for="city" class="label h6">Ville</label>
             <input type="text" name="city" id="city" class="input h5" placeholder="paris" required />
-          </div>
+            <small class="error-text">introduce una ciudad</small>
         </div>
-        <div class="flex justify-end">
-          <a id="confirmPurchase" class="inline-flex justify-center py-2 px-4 mt-5 border border-transparent h5 shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 "
-            href="#" > Procéder au paiement</a>
-        </div>
+        </form>
+      <div class="flex justify-end">
+    <a id="confirmPurchase" class="inline-flex justify-center py-2 px-4 mt-5 border border-transparent h5 shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 "
+      href="#" > Procéder au paiement</a>
+  </div>
+     
+         
       </section>
     <!-- PURCHASE FORM -->
 
@@ -138,3 +148,4 @@
 </body>
 
 </html>
+
