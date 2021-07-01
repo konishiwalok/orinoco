@@ -90,14 +90,13 @@ function sendOrder() {
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
   }
 
-  const apiUrl = 'http://localhost:3000';
 
-  fetch(`${apiUrl}/api/camera/order`, requestOptions)
+  fetch(`http://localhost:3000/api/camera/order`, requestOptions)
     .then((response) => response.json())
     .then((json) => {
       console.log(json)
-      localStorage.removeItem('cart')
-      window.location.href = `${window.location.origin}/confirmation.html?orderId=${json.orderId}`
+      localStorage.removeItem('cart', JSON.stringify(cart))
+      window.location.href("confirmation.html")
     })
     .catch(() => {
       alert(error)

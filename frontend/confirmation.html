@@ -21,11 +21,22 @@
 
 <body>
   
-<div class="container" style="height:500px">
+<div class="container" style="height:100%">
     <main class="w-full bg-oniPink rounded-lg my-4  py-16 flex justify-center flex-col">
-      <p class="text-center text-4xl font-bold mb-4">Félicitation, votre commande à bien été prise en compte !</p>
-      <p class="text-center text-xl mb-4">Identifiant de votre commande : <span class="font-bold" id="commandId"></span></p>
-      <a class="inline-block uppercase text-center mx-auto bg-indigo-600 py-2 px-4 font-semibold rounded text-white borrar"  href="index.html">Retourner à l'accueil</a>
+      <p class="text-center h2 p-4 stilo300 text-4xl font-bold mb-4">Félicitation, votre commande à bien été prise en compte !</p>
+      <div>
+        <h1 class="h3 stilo300 p-5"> Recapitulatif de votre achat :</h1>
+        <p class="h4 stilo300 px-5 py-2">Nom: </p>
+        <p class="h4 stilo300 px-5 py-2">Prénom: </p>
+        <p class="h4 stilo300 px-5 py-2">votre adresse: </p>
+        <p class="h4 stilo300 px-5 py-2">Prix: </p>
+        <p class="h4 stilo300 px-5 py-2">Identifiant de votre commande : <span class="font-bold" id="commandId"></span></p>
+
+      </div>
+      <a class=" mt-5 m-2 inline-block uppercase text-center mx-auto bg-indigo-600 py-2 px-4 font-semibold rounded text-white borrar"  href="index.html">Retourner à l'accueil</a>
+      <form  class="flex justify-center "></form>
+        <input  class="mb-5 inline-block uppercase text-center mx-auto bg-indigo-600 py-2 px-4 font-semibold rounded text-white borrar" type="button" name="imprimir" value="Imprimir" onclick="window.print();"> 
+      </form>
     </main>
 </div>
  
