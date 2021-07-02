@@ -1,6 +1,7 @@
 let cart = JSON.parse(localStorage.getItem('cart') || '{}')
 
 product.addEventListener('click', e => {
+    console.log(e.target.parentElement);
     addCart(e)
 })
 

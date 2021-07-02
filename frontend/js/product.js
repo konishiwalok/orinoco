@@ -8,7 +8,7 @@ const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
-var id = urlParams.get('id');
+let orderId = urlParams.get('id');
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const fetchData = async () => {
 
     try {
-        const res = await fetch(url + "/" + id); // respuesta del API
+        const res = await fetch(url + "/" + orderId); // respuesta del API
         const data = await res.json(); // cambio de los datos a archivo JSON
         //console.log(data);
         showProduct(data);
