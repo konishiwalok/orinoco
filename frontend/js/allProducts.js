@@ -1,4 +1,3 @@
-
 const url = 'http://localhost:3000/api/cameras';
 
 const items = document.getElementById('items'); // llama donde va a ir la info 
@@ -34,4 +33,3 @@ const showAllCards = data => {
     })
     items.appendChild(fragment);
 }
-/* PAGE PRODUIT */

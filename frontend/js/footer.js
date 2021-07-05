@@ -1,5 +1,3 @@
-
-
 const footer = `
 <div id="footer" class="py-5">
     <div class="col py-3">

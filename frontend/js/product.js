@@ -52,5 +52,3 @@ const showProduct = data => {
 
     product.appendChild(fragment);
 }
-
-    

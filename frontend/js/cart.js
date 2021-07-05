@@ -1,6 +1,3 @@
-
-
-
 const itemsCart = document.getElementById('items-cart')
 const footerCart = document.getElementById('footer-cart')
 const templateFooter = document.getElementById('template-footer').content;

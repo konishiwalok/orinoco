@@ -5,41 +5,6 @@ btnCart.addEventListener('click', e => {
   sendInfo(e);
 })
 
-// function enviarFormulario(){
-//   console.log("enviando formulario")
-
-//   let mensajesError =[]; 
-
-//   if (nom.value === null ||nom.value === ''){
-//     meansajError.push
-//   }
-
-//   return false
-// }
-
-// // Input validity
-// let nom= document.getElementById('fistname');
-// let lastname= document.getElementById('lastname');
-// let email= document.getElementById('email');
-// let adress= document.getElementById('adress');
-// let zipcode= document.getElementById('zipcode');
-// let city= document.getElementById('city');
-
-// const formulario = document.getElementById('user-form');
-// const submitBoton = document.getElementById('confirmPurchase');
-
-
-// document.querySelectorAll('.form-box').forEach((box)) =>{
-
-//   const boxInput = box.querySelector('input');
-
-//   boxInput.addEventListener('keydown',(event) => {
-
-//     console.log ('input $ {boxInput.firstname} value ' , boxInput.value);
-
-//   });
-
-// Input validity
 const expresiones = {
   name: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
   lastname: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -167,7 +132,7 @@ const sendInfo = e => {
         console.log(info)
         localStorage.removeItem('cart', JSON.stringify(cart))
         localStorage.setItem('dUser', JSON.stringify(info));
-        window.location.href = `${window.location.origin}/orinoco/frontend/confirmation.html?orderId=${json.orderId}`
+        window.location.href = `${window.location.origin}/frontend/confirmation.html?orderId=${json.orderId}`
       })
       .catch(() => {
         alert(error)

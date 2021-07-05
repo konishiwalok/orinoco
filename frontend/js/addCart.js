@@ -18,7 +18,6 @@ const addCart = e => {
     }
     e.stopPropagation();
 }
-
 // Separa la informacion del item
 const setCart = obj => {
 
