@@ -11,7 +11,7 @@ const header = `
             <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="d-flex justify-content-sm-between">
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item"><a class="nav-link active stilo700 h4" aria-current="page" href="index.html">Accueil</a></li>
@@ -19,7 +19,7 @@ const header = `
                 <li class="nav-item"><a class="nav-link stilo700 h4" href="#">Register</a></li>
             </ul>
             </div>
-            </div>
+            
         </div>
     </nav>
 </header>

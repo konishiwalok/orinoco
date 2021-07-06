@@ -85,15 +85,7 @@
     text-decoration:none;
     }
 
- /* div .doblar {
-  background-color: #daa30e; 
-  display: flex ;
-  flex-direction:row;
-  align-items: center;
-  color:red;
-  
-}
-     */
+
      .flex-row{
        display: flex;
        flex-direction:row;
