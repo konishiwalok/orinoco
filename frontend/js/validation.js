@@ -121,7 +121,6 @@ const sendInfo = e => {
       .then((response) => response.json())
       .then((json) => {
         
-
         const info = {
           firstName: json.contact.firstName,
           lastName: json.contact.lastName,

@@ -82,5 +82,4 @@ const btnAction = e => {
         localStorage.setItem('cart', JSON.stringify(cart));
         showCart();
     }
-    e.stopPropagation();
-}
+    e.stopPropagation();}
