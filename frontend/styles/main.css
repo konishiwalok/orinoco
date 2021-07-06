@@ -111,8 +111,10 @@ font-weight: 400;
 font-weight: 700;
 }
 
-
-
+.espacio{
+  display:flex;
+  justify-content:space-between;
+}
   
   
   .mt-4 {

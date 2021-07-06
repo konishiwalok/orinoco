@@ -2,8 +2,8 @@ const header = `
 <!-- NAVBAR-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+    <div class="container-fluid">
+            <a class="navbar-brand px-5 " href="index.html">
             <img src="img/logo.png" alt="" width="200">
             </a>
             
@@ -11,8 +11,7 @@ const header = `
             <span class="navbar-toggler-icon"></span>
             </button>
             
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse px-4" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item"><a class="nav-link active stilo700 h4" aria-current="page" href="index.html">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link stilo700 h4" href="cart.html">Panier</a></li>
@@ -22,6 +21,7 @@ const header = `
             
         </div>
     </nav>
+    
 </header>
 `
 
