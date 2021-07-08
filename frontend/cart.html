@@ -31,9 +31,9 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container bg-oniPink my-5">
       <h4 class="py-5 text-center stilo700">Mon panier</h4>
-      <table class="table">
+      <table class="table container">
         <thead>
           <tr>
             <th scope="col">Cameras</th>
@@ -47,7 +47,7 @@
         <tbody id="items-cart"></tbody>
         <tfoot>
           <tr id="footer-cart">
-            <th scope="row" colspan="5" class="bg-info">
+            <th scope="row" colspan="5">
               Panier vide , ajoutez des produits!
             </th>
           </tr>
@@ -55,7 +55,7 @@
       </table>
       <h4>Cards</h4>
       <div class="row" id="cards"></div>
-    </div>
+    
 
     <template id="template-footer">
       <th scope="row" colspan="2">Total produits</th>
@@ -63,7 +63,7 @@
       <td>
         <button
           class="btn btn-danger btn-sm h1"
-          style="font-size: 20px"
+          style="font-size: 15px"
           id="btn-clear-cart"
         >
           vider le panier
@@ -100,9 +100,10 @@
         </div>
       </div>
     </template>
+    </div>
 
-    <section class="mt-4 rounded-md p-4 bg-oniPink">
-      <h2 class="text-lg font-bold mb-2">Passer commande</h2>
+    <section class="mt-4 rounded-md p-4 degrade container">
+      <h2 class="text-lg font-bold mb-2 h2 container stilo700">Passer commande</h2>
 
       <main>
         <form action="" class="formulario" id="formulario">
@@ -205,11 +206,13 @@
           </div>
 
           <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" 
+            <a 
             class="
             formulario__btn
-                    confirmPurchase" 
-            id="confirmPurchase">Enviar</button>
+            confirmPurchase
+            inline-flex justify-center py-2 px-4 mt-5 h5 shadow-sm text-sm
+            font-medium  rounded-md text-white  bg-indigo-600 hover:bg-indigo-700" 
+            id="confirmPurchase">Envoyer</a>
             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
               Formulario enviado exitosamente!
             </p>
