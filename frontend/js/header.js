@@ -1,5 +1,4 @@
 const header = `
-<!-- NAVBAR-->
 <header>
     <nav class="navbar navbar-expand-sm navbar-light " id="navbar">
     <div class="container-fluid">
